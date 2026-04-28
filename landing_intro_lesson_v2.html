@@ -1,0 +1,112 @@
+
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  .page { max-width: 680px; font-family: var(--font-sans); }
+
+  .block-label { font-size: 10px; color: #854F0B; background: #FAEEDA; padding: 2px 8px; border-radius: 4px; display: inline-block; margin-bottom: 8px; }
+
+  /* Hero */
+  .hero { background: var(--color-background-primary); border: 0.5px solid var(--color-border-tertiary); border-radius: var(--border-radius-lg); padding: 2rem; margin-bottom: 12px; }
+  .hero-badge { display: inline-flex; align-items: center; gap: 6px; background: #EAF3DE; color: #3B6D11; font-size: 12px; font-weight: 500; padding: 4px 10px; border-radius: 100px; margin-bottom: 1rem; }
+  .hero-badge-dot { width: 6px; height: 6px; border-radius: 50%; background: #639922; flex-shrink: 0; }
+  .hero h1 { font-size: 22px; font-weight: 500; color: var(--color-text-primary); line-height: 1.35; margin-bottom: 0.5rem; }
+  .hero p { font-size: 15px; color: var(--color-text-secondary); line-height: 1.6; }
+
+  /* Reminder */
+  .reminder { background: #EEEDFE; border: 0.5px solid #AFA9EC; border-radius: var(--border-radius-lg); padding: 1rem 1.25rem; margin-bottom: 12px; display: flex; align-items: flex-start; gap: 12px; }
+  .reminder-icon { font-size: 18px; flex-shrink: 0; margin-top: 1px; }
+  .reminder-text { font-size: 14px; color: #3C3489; line-height: 1.55; }
+  .reminder-text strong { font-weight: 500; }
+
+  /* Stats */
+  .stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin-bottom: 12px; }
+  .stat { background: var(--color-background-primary); border: 0.5px solid var(--color-border-tertiary); border-radius: var(--border-radius-md); padding: 1rem; text-align: center; }
+  .stat-num { font-size: 20px; font-weight: 500; color: var(--color-text-primary); }
+  .stat-label { font-size: 11px; color: var(--color-text-secondary); margin-top: 3px; line-height: 1.4; }
+
+  /* Advantages */
+  .section { background: var(--color-background-primary); border: 0.5px solid var(--color-border-tertiary); border-radius: var(--border-radius-lg); padding: 1.5rem 2rem; margin-bottom: 12px; }
+  .section-title { font-size: 13px; font-weight: 500; color: var(--color-text-secondary); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 1rem; }
+  .adv-list { display: flex; flex-direction: column; gap: 14px; }
+  .adv-item { display: flex; align-items: flex-start; gap: 12px; }
+  .adv-icon { width: 32px; height: 32px; border-radius: 8px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 15px; }
+  .adv-icon.green { background: #EAF3DE; }
+  .adv-icon.blue { background: #E6F1FB; }
+  .adv-icon.amber { background: #FAEEDA; }
+  .adv-icon.purple { background: #EEEDFE; }
+  .adv-text { padding-top: 2px; }
+  .adv-text strong { font-size: 14px; font-weight: 500; color: var(--color-text-primary); display: block; margin-bottom: 1px; }
+  .adv-text span { font-size: 13px; color: var(--color-text-secondary); line-height: 1.5; }
+
+  .footer-note { font-size: 12px; color: var(--color-text-tertiary); text-align: center; padding: 0.25rem 0 1rem; line-height: 1.6; }
+</style>
+
+<div class="page">
+
+  <span class="block-label">Блок 1 — hero</span>
+  <div class="hero">
+    <div class="hero-badge"><span class="hero-badge-dot"></span>Запись подтверждена</div>
+    <h1>Ждём вас на вводном уроке!</h1>
+    <p>Наш специалист свяжется с вами, чтобы согласовать удобное время для бесплатного занятия.</p>
+  </div>
+
+  <span class="block-label">Блок 2 — reminder</span>
+  <div class="reminder">
+    <div class="reminder-icon">🔔</div>
+    <div class="reminder-text"><strong>Не пропустите звонок от нашего специалиста</strong> — он поможет выбрать удобное время для бесплатного онлайн-занятия.</div>
+  </div>
+
+  <span class="block-label">Блок 3 — цифры доверия</span>
+  <div class="stats">
+    <div class="stat">
+      <div class="stat-num">41 000</div>
+      <div class="stat-label">детей занимаются с нами сейчас</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">9 600+</div>
+      <div class="stat-label">сдали ЕГЭ на 80+ баллов</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">№ 1</div>
+      <div class="stat-label">в рейтинге edTech школьного сегмента</div>
+    </div>
+  </div>
+
+  <span class="block-label">Блок 4 — что будет на уроке</span>
+  <div class="section">
+    <div class="section-title">Что вас ждёт на вводном уроке</div>
+    <div class="adv-list">
+      <div class="adv-item">
+        <div class="adv-icon green">📋</div>
+        <div class="adv-text">
+          <strong>Оценка текущих знаний</strong>
+          <span>Преподаватель поймёт, на каком уровне ребёнок сейчас и где есть пробелы</span>
+        </div>
+      </div>
+      <div class="adv-item">
+        <div class="adv-icon blue">🗺</div>
+        <div class="adv-text">
+          <strong>Индивидуальный план</strong>
+          <span>Составим программу под цели и темп именно вашего ребёнка</span>
+        </div>
+      </div>
+      <div class="adv-item">
+        <div class="adv-icon amber">⭐</div>
+        <div class="adv-text">
+          <strong>Знакомство с педагогом</strong>
+          <span>Опытный репетитор, который умеет влюбить ребёнка в предмет</span>
+        </div>
+      </div>
+      <div class="adv-item">
+        <div class="adv-icon purple">🖥</div>
+        <div class="adv-text">
+          <strong>Удобная онлайн-платформа</strong>
+          <span>Видеочат, интерактивная доска и все материалы в одном месте</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-note">Вы перешли по персональной ссылке — запись подтверждена автоматически.<br>Ничего заполнять не нужно.</div>
+
+</div>
